@@ -8,43 +8,46 @@ body {
     background: #111;
     color: #fff;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
     height: 100vh;
-    overflow: hidden;
 }
 
-.column {
-    flex: 1;
-    overflow-y: auto;
-    padding: 20px;
-    scrollbar-width: thin;
+/* LEFT: Shorts column */
+.video-column {
+    width: calc(100vh * 9 / 16);
+    max-width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
-/* Video column */
+/* Each video fills the screen */
 .video {
-    margin-bottom: 20px;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 
 .video iframe {
     width: 100%;
-    aspect-ratio: 9 / 16; /* Shorts vertical format */
-    border-radius: 8px;
+    height: 100%;
+    border: none;
 }
 
-/* Image column */
+/* RIGHT: Images column */
+.image-column {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
 .media {
     margin-bottom: 20px;
 }
 
-.media img {
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-}
-
+.media img,
 .media video {
     width: 100%;
     border-radius: 8px;
