@@ -69,3 +69,13 @@ body {
 @media (max-width: 900px) {
     .masonry { column-count: 1; }
 }
+
+.media img,
+.media video {
+    transition: transform 0.2s ease;
+}
+
+.media:hover img,
+.media:hover video {
+    transform: scale(1.02);
+}
