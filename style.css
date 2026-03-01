@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.column {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    scrollbar-width: thin;
+}
+
+/* Video column */
+.video {
+    margin-bottom: 20px;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 9 / 16; /* Shorts vertical format */
+    border-radius: 8px;
+}
+
+/* Image column */
+.media {
+    margin-bottom: 20px;
+}
+
+.media img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
