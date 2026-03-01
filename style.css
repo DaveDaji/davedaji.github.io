@@ -125,13 +125,14 @@ body {
 
 .dropdown-content {
     position: absolute;
-    top: 35px;
+    top: 100%;
     left: 0;
     background: #ffffff;
     min-width: 160px;
     border: 1px solid rgba(0,0,0,0.1);
     display: none;
     flex-direction: column;
+    z-index: 1000;
 }
 
 .dropdown-content a {
