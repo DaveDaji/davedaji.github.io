@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #f5f5f2;
+    background: #faf9f6;
     color: #111;
     font-family: Arial, sans-serif;
     overflow: hidden;
@@ -78,4 +78,9 @@ body {
 .media:hover img,
 .media:hover video {
     transform: scale(1.02);
+}
+
+.media img,
+.media video {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
