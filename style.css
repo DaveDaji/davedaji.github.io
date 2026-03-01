@@ -61,3 +61,11 @@ body {
     border-radius: 8px;
     display: block;
 }
+
+@media (max-width: 1400px) {
+    .masonry { column-count: 2; }
+}
+
+@media (max-width: 900px) {
+    .masonry { column-count: 1; }
+}
