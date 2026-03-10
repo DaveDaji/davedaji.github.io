@@ -181,7 +181,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
     gap: 30px;
-    padding: 100px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
 }
 
 .video-item iframe {
