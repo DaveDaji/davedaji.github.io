@@ -190,3 +190,7 @@ body {
     border: none;
     border-radius: 8px;
 }
+
+.scroll-page {
+    overflow: auto;
+}
