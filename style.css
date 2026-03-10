@@ -124,7 +124,7 @@ body {
 
 .nav-right {
     display: flex;
-    align-items: center;
+    align-items: right;
 }
 
 /* Dropdown */
