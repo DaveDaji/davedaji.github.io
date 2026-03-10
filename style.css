@@ -109,7 +109,7 @@ body {
 }
 
 .header-left {
-    display: inline-block;
+    display: flex;
     align-items: left;
 }
 
